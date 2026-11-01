@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#dae2fd","surface-container-highest":"#d3e4fe","surface-variant":"#d3e4fe","on-tertiary-container":"#bdffdb","secondary-fixed-dim":"#bec6e0","on-background":"#0b1c30","on-primary-fixed":"#00174b","on-primary":"#ffffff","on-primary-container":"#eeefff","tertiary-container":"#007d55","on-error":"#ffffff","on-surface":"#0b1c30","inverse-primary":"#b4c5ff","surface":"#f8f9ff","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#ffffff","outline-variant":"#c3c6d7","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#002113","tertiary":"#006242","primary-fixed":"#dbe1ff","tertiary-fixed-dim":"#4edea3","surface-container":"#e5eeff","error":"#ba1a1a","error-container":"#ffdad6","on-secondary-fixed":"#131b2e","surface-container-high":"#dce9ff","on-secondary":"#ffffff","inverse-surface":"#213145","outline":"#737686","surface-container-low":"#eff4ff","primary":"#004ac6","on-tertiary":"#ffffff","primary-fixed-dim":"#b4c5ff","surface-tint":"#0053db","surface-bright":"#f8f9ff","on-surface-variant":"#434655","primary-container":"#2563eb","on-secondary-container":"#5c647a","on-error-container":"#93000a","secondary-container":"#dae2fd","on-primary-fixed-variant":"#003ea8","background":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","on-tertiary-fixed-variant":"#005236","secondary":"#565e74","surface-dim":"#cbdbf5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.5rem","space-md":"1rem","gutter-mobile":"1rem","margin":"2rem","space-xl":"2rem","space-lg":"1.5rem"},fontFamily:{"label-md":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"]},fontSize:{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CampusFix Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgZCj5W0yAJOKRRBde2qlUzYX-dYpMk6m0gkV7QTTMFManQv7aJcgD1Yq-MVnvmaYg3up_MIJHgedGDCy7jvvSsk8-2HfIaZuAGLM5fo1MALx7ZmX4L7SYjS6NmwZdW0_I_bQLmpNsLcyEJOikF00xbV04y0tb9yrDVLXTDuc8KXt33JXVdnCSUosgEWmFWtoR-negYaDcliqIYp8mSYPwQp63TEcyGM1SJ4RHin8YwQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">CampusFix</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Facility Operations</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">Operations Menu</span></div><nav class="flex flex-col gap-space-xs px-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="student-dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Student Dashboard</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface">Active</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="report-issue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Report Issue</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant">New</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="staff-operations" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">security</span><span>Staff Operations</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container">4 Urgent</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="issue-details" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span>Issue Details</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-and-assets" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Buildings & Assets</span></div></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)]"><div class="flex items-center gap-space-xs"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Campus Services</span></div><span class="font-label-sm text-label-sm text-tertiary font-semibold">Operational</span></div><button class="w-full flex items-center justify-center gap-space-xs py-1.5 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm transition-colors"><span class="material-symbols-outlined text-[16px]">sync_alt</span><span>Switch View Mode</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-1 hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">home</span><span>CampusFix</span></span><span>/</span><span class="text-on-surface font-medium">Operations Platform</span></div><div class="flex items-center bg-surface-container-low px-space-md py-1.5 rounded-lg w-96 max-w-md text-on-surface-variant focus-within:ring-2 focus-within:ring-primary-container focus-within:bg-surface-container-lowest transition-all"><span class="material-symbols-outlined text-[20px] mr-space-sm text-outline">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm w-full text-on-surface placeholder:text-outline" placeholder="Quick search tickets, buildings, personnel..." type="text"/><kbd class="font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded shadow-[0_1px_2px_rgba(0,0,0,0.05)] ml-space-sm whitespace-nowrap">⌘ K</kbd></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 bg-error-container text-on-error-container px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">phone_in_talk</span><span>SOS: (555) 0199</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ip5knEs3_zeH4G5VcXbv-FvwwLQBOcgLy2YPjbKXLGnx5wWTeFBpYKhWI5JBgiuSmYJZaRj4TH4JwB3gHV_8dN0pDHaWU2fQKzU46P540EJQeTSHfGobGLA3nx6AeLaIivNaTTVmbvjkJFH8D-D0x3Q1TCU-1-XeXmXzL8Kaoo7TfUVK3OclfHhy7OQ96HphJwcEpkp8qe-T0WlNX7a7uBe8LETRr9IhfqCeJs9q"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Alex Rivera</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Student Resident (Hall B)</span></div><span class="material-symbols-outlined text-[18px] text-outline">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full space-y-space-lg pb-12">
+<!-- Hero / Welcome Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 h-72 w-72 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-20 h-64 w-64 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="max-w-2xl space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Hall B Resident Portal • Term Fall 2024</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Welcome back, Alex! 👋
+          </h1>
+<p class="font-headline-sm text-headline-sm text-primary-container font-medium">
+            Let's make our campus better.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Report facilities problems, track maintenance crews in real-time, and vote on community repairs across campus spaces.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-2 lg:pt-0">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:shadow-md hover:bg-primary transition-all" data-path="report-issue" href="#">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Report an Issue</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" data-path="buildings-and-assets" href="#">
+<span class="material-symbols-outlined text-[20px] text-secondary">explore</span>
+<span>Browse Campus Map</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Metric / Statistics Cards (Grid of 4) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Reports -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Reports</p>
+<h3 class="font-headline-xl text-headline-xl text-on-surface mt-1">18</h3>
+</div>
+<div class="p-2.5 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">assignment</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+            +2 this month
+          </span>
+<span class="text-outline">Lifetime 42</span>
+</div>
+</div>
+<!-- Pending Issues -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending Issues</p>
+<h3 class="font-headline-xl text-headline-xl text-on-surface mt-1">3</h3>
+</div>
+<div class="p-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-medium">
+            Awaiting inspection
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Avg ~2 hrs</span>
+</div>
+</div>
+<!-- In Progress -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">In Progress</p>
+<h3 class="font-headline-xl text-headline-xl text-on-surface mt-1">5</h3>
+</div>
+<div class="p-2.5 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">engineering</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-medium">
+            Crews assigned
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Active dispatch</span>
+</div>
+</div>
+<!-- Resolved -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Resolved</p>
+<h3 class="font-headline-xl text-headline-xl text-on-surface mt-1">10</h3>
+</div>
+<div class="p-2.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-on-tertiary-container text-tertiary font-semibold">
+            Completed repairs
+          </span>
+<span class="font-label-sm text-label-sm text-outline">98% Satisfaction</span>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Reports List + Live Campus Insights Bento -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left / Primary Column (Reports list with filters) -->
+<section class="xl:col-span-8 space-y-space-md">
+<!-- Filter & Search Action Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
+<div class="flex flex-col sm:flex-row gap-space-sm items-stretch sm:items-center justify-between">
+<!-- Search bar -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined text-[20px] text-outline absolute left-3 top-2.5">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-colors" id="ticket-search" placeholder="Search reports by title, keyword, or room #..." type="text"/>
+</div>
+<!-- Category selector -->
+<div class="flex items-center gap-space-xs">
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg focus:outline-none cursor-pointer" id="category-select">
+<option value="all">All Categories</option>
+<option value="Electrical">Electrical</option>
+<option value="Plumbing">Plumbing</option>
+<option value="Furniture">Furniture</option>
+<option value="Wi-Fi">Wi-Fi / Tech</option>
+<option value="HVAC">HVAC / Cleaning</option>
+</select>
+<!-- Sort selector -->
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg focus:outline-none cursor-pointer" id="sort-select">
+<option value="newest">Newest First</option>
+<option value="upvotes">Most Upvoted</option>
+<option value="priority">High Priority</option>
+</select>
+</div>
+</div>
+<!-- Status Pills -->
+<div class="flex items-center gap-2 pt-1 overflow-x-auto no-scrollbar">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider pr-1">Filter:</span>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary font-medium transition-colors shadow-sm" data-status="all">
+              All (18)
+            </button>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-status="Pending">
+              Pending (3)
+            </button>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-status="In Progress">
+              In Progress (5)
+            </button>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-status="Resolved">
+              Resolved (10)
+            </button>
+</div>
+</div>
+<!-- Reports List Container -->
+<div class="space-y-space-sm" id="reports-container">
+<!-- Report 1: Broken AC Unit -->
+<div class="report-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-category="HVAC" data-status="In Progress" data-title="Broken AC Unit in Room 304 Warren Hall">
+<div class="space-y-2 min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">engineering</span>
+                  In Progress
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                  High Priority
+                </span>
+<span class="font-body-sm text-body-sm text-outline">#CF-8921 • Oct 24, 2024</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Broken AC Unit in Room 304
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+                  Warren Hall • 3rd Floor, Room 304
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span> HVAC / Electrical
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-tertiary">support_agent</span>
+                  Tech: Dave M. (Dispatched)
+                </span>
+<span class="inline-flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">thumb_up</span> 14 students verified
+                </span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-none border-surface-container">
+<div class="flex items-center gap-1 text-primary bg-primary-fixed/50 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>ETA: Today 3:30 PM</span>
+</div>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all" data-path="issue-details" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Report 2: Water Leak -->
+<div class="report-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-category="Plumbing" data-status="Pending" data-title="Water Leak Near Library Restroom 2A Central Library">
+<div class="space-y-2 min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">pending</span>
+                  Pending Review
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                  High Priority
+                </span>
+<span class="font-body-sm text-body-sm text-outline">#CF-8914 • Oct 23, 2024</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Water Leak Near Library Restroom 2A
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+                  Central Library • 2nd Floor East Wing
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">water_damage</span> Plumbing
+                </span>
+<span class="inline-flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[15px]">person_off</span>
+                  Unassigned (In queue)
+                </span>
+<span class="inline-flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[15px]">thumb_up</span> 28 students upvoted
+                </span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-none border-surface-container">
+<button class="upvote-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[15px]">arrow_upward</span>
+<span>Upvote (28)</span>
+</button>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all" data-path="issue-details" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Report 3: Unstable Desk Legs -->
+<div class="report-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-category="Furniture" data-status="Resolved" data-title="Unstable Desk Legs in Lecture Hall B12 Science Complex">
+<div class="space-y-2 min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-on-tertiary-container text-tertiary font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                  Resolved
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+                  Low Priority
+                </span>
+<span class="font-body-sm text-body-sm text-outline">#CF-8890 • Oct 21, 2024</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Unstable Desk Legs in Lecture Hall B12
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+                  Science Complex • B12 Lecture Hall
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">chair</span> Furniture
+                </span>
+<span class="inline-flex items-center gap-1 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+                  Welded and reinforced leg bracket
+                </span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-none border-surface-container">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed">
+                Closed Oct 22
+              </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all" data-path="issue-details" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Report 4: Slow Wi-Fi Connectivity -->
+<div class="report-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-category="Wi-Fi" data-status="In Progress" data-title="Slow Wi-Fi Connectivity in Dining Commons Student Union">
+<div class="space-y-2 min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">wifi_tethering</span>
+                  In Progress
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-medium">
+                  Medium Priority
+                </span>
+<span class="font-body-sm text-body-sm text-outline">#CF-8882 • Oct 20, 2024</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Slow Wi-Fi Connectivity in Dining Commons
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+                  Student Union • Food Court Main Seating
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">wifi</span> Wi-Fi / Tech
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">router</span>
+                  IT Crew replacing access point AP-04
+                </span>
+<span class="inline-flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[15px]">thumb_up</span> 42 upvotes
+                </span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-none border-surface-container">
+<button class="upvote-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[15px]">arrow_upward</span>
+<span>Upvoted (42)</span>
+</button>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all" data-path="issue-details" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Report 5: Burned Out Overhead Light -->
+<div class="report-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-category="Electrical" data-status="Resolved" data-title="Burned Out Overhead Light in Stairwell C Engineering Building">
+<div class="space-y-2 min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-on-tertiary-container text-tertiary font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                  Resolved
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-medium">
+                  Medium Priority
+                </span>
+<span class="font-body-sm text-body-sm text-outline">#CF-8849 • Oct 18, 2024</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Burned Out Overhead Light in Stairwell C
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+                  Engineering Building • Stairwell C, Levels 2-3
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">lightbulb</span> Electrical
+                </span>
+<span class="inline-flex items-center gap-1 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+                  LED ballast replaced & tested
+                </span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-none border-surface-container">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed">
+                Closed Oct 19
+              </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all" data-path="issue-details" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Empty State Preview (Hidden by default, shown when filters yield 0 results) -->
+<div class="hidden bg-surface-container-lowest p-space-xl rounded-xl shadow-sm text-center flex-col items-center justify-center space-y-space-sm py-16" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<div class="max-w-sm space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">No reports found</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              We couldn't find any maintenance tickets matching your search query or active filter combination.
+            </p>
+</div>
+<button class="px-space-lg py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" id="clear-filters-btn">
+            Clear Filters & Reset
+          </button>
+</div>
+</section>
+<!-- Right / Secondary Column: Campus Operations Radar & Micro-Updates -->
+<aside class="xl:col-span-4 space-y-space-md">
+<!-- Interactive Hall Dispatch Status -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">engineering</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Live Crew Dispatch</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-on-tertiary-container text-tertiary font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<!-- Dispatch Timeline -->
+<div class="space-y-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-3 p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm mt-0.5" data-alt="Portrait photo of campus maintenance technician smiling in uniform with hard hat and badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJZ8dTI_Axr4nK1G2o_P2NAQ_QCuQhk7t_2AEp3XwiJStyRqmdHy7kSgOiemXRv3F1uhux6La2fs_2D2QnFaSlGig6N0neiFEBbjPhUArYvEUhQhMFz8ZS77cPWouVX1pQDJGJ0ArMeaaY42h6XAD4IaE7q6TafMCw-ekaGE4iYEX9Ut4oerNrZdX6fLIVWyd1CqR2aAhXAKKA1NxFLiLByAUULWYIeEELFyKlXVaj"/>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Crew #04 (HVAC)</span>
+<span class="font-label-sm text-label-sm text-outline">Just now</span>
+</div>
+<p class="text-on-surface-variant text-body-sm">En route to Warren Hall (Room 304). Replacement motor arrived.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm mt-0.5" data-alt="Portrait photo of a young female electrical technician holding diagnostic tools in a university hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6bCjh7MbGcqDXta2EIOvEGrn9qHgVpfTgKc2GQPUq6dzFQdCEEAB73wEwUgAYaLV0ZXhzkO-Y6WzG5a2MerHdVGK2Z7J0VlSJyKidTbI-BYH412BNWudrvKJfQG_BVcxrCeh8caadkPedMQwAOY6h9zi395UvQ16i9IJoe-tr7Z-pywiWho9GJTXCIpZ-RmbVAYXjgmzGPrc-tEtYxtpKWzdqPB3wv-Y4H67YGI10"/>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Crew #02 (Tech/IT)</span>
+<span class="font-label-sm text-label-sm text-outline">28m ago</span>
+</div>
+<p class="text-on-surface-variant text-body-sm">Configuring dining hall repeater nodes for high peak load.</p>
+</div>
+</div>
+</div>
+<!-- Campus Maintenance Health / Gauge Visual -->
+<div class="pt-2 border-t border-surface-container space-y-2">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Daily Campus SLA Compliance</span>
+<span class="font-semibold text-tertiary">94.2%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-container h-2 rounded-full" style="width: 94.2%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-outline">18 of 21 urgent repairs closed within under 4 hours.</p>
+</div>
+</div>
+<!-- Hall B Notice Board Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">campaign</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resident Advisory</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Hall B</span>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md space-y-2">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">water_drop</span>
+              Scheduled Boiler Inspection
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Hot water maintenance is planned for Thursday, 6:00 AM - 8:30 AM across floors 2 through 5. Tap cold water only during this window.
+            </p>
+</div>
+<!-- Quick FAQ / Safety Action Links -->
+<div class="space-y-1 font-label-md text-label-md">
+<a class="flex items-center justify-between p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">help_outline</span>
+<span>How are upvotes prioritized?</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">emergency</span>
+<span>Facilities Emergency Protocols</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Campus Energy & Sustainability Tip Card -->
+<div class="bg-primary/5 rounded-xl p-space-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">energy_savings_leaf</span>
+</div>
+<div class="min-w-0 flex-1">
+<h5 class="font-label-md text-label-md font-semibold text-on-surface">Campus Green Tip</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Reporting dripping faucets saves up to 3,000 gallons per dorm floor each semester. Good job!
+            </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Interactive Search / Filter Client Logic -->
+<script>
+    (function initDashboard() {
+      const searchInput = document.getElementById('ticket-search');
+      const categorySelect = document.getElementById('category-select');
+      const statusPills = document.querySelectorAll('.filter-pill');
+      const reportCards = document.querySelectorAll('.report-card');
+      const emptyState = document.getElementById('empty-state');
+      const clearBtn = document.getElementById('clear-filters-btn');
+      const upvoteButtons = document.querySelectorAll('.upvote-btn');
+
+      let currentStatus = 'all';
+
+      function filterReports() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const cat = categorySelect ? categorySelect.value : 'all';
+        let visibleCount = 0;
+
+        reportCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardStatus = card.getAttribute('data-status');
+          const cardTitle = (card.getAttribute('data-title') || '').toLowerCase();
+
+          const matchesQuery = !query || cardTitle.includes(query);
+          const matchesCat = (cat === 'all') || (cardCat === cat);
+          const matchesStatus = (currentStatus === 'all') || (cardStatus === currentStatus);
+
+          if (matchesQuery && matchesCat && matchesStatus) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (emptyState) {
+          if (visibleCount === 0) {
+            emptyState.classList.remove('hidden');
+            emptyState.classList.add('flex');
+          } else {
+            emptyState.classList.add('hidden');
+            emptyState.classList.remove('flex');
+          }
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterReports);
+      }
+
+      if (categorySelect) {
+        categorySelect.addEventListener('change', filterReports);
+      }
+
+      statusPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          statusPills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+            p.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          pill.classList.remove('bg-surface-container', 'text-on-surface');
+          pill.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+
+          currentStatus = pill.getAttribute('data-status');
+          filterReports();
+        });
+      });
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (searchInput) searchInput.value = '';
+          if (categorySelect) categorySelect.value = 'all';
+          currentStatus = 'all';
+          statusPills.forEach((p, idx) => {
+            if (idx === 0) {
+              p.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+              p.classList.remove('bg-surface-container', 'text-on-surface');
+            } else {
+              p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+              p.classList.add('bg-surface-container', 'text-on-surface');
+            }
+          });
+          filterReports();
+        });
+      }
+
+      // Upvote Micro-interaction
+      upvoteButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isUpvoted = btn.classList.contains('upvoted');
+          if (!isUpvoted) {
+            btn.classList.add('upvoted', 'bg-primary-container', 'text-on-primary');
+            btn.classList.remove('bg-surface-container', 'text-on-surface');
+            const span = btn.querySelector('span:last-child');
+            if (span) {
+              const currentNum = parseInt(span.textContent.replace(/[^0-9]/g, '')) || 0;
+              span.textContent = `Upvoted (${currentNum + 1})`;
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</div></main></div></body></html>

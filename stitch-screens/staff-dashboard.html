@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#dae2fd","surface-container-highest":"#d3e4fe","surface-variant":"#d3e4fe","on-tertiary-container":"#bdffdb","secondary-fixed-dim":"#bec6e0","on-background":"#0b1c30","on-primary-fixed":"#00174b","on-primary":"#ffffff","on-primary-container":"#eeefff","tertiary-container":"#007d55","on-error":"#ffffff","on-surface":"#0b1c30","inverse-primary":"#b4c5ff","surface":"#f8f9ff","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#ffffff","outline-variant":"#c3c6d7","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#002113","tertiary":"#006242","primary-fixed":"#dbe1ff","tertiary-fixed-dim":"#4edea3","surface-container":"#e5eeff","error":"#ba1a1a","error-container":"#ffdad6","on-secondary-fixed":"#131b2e","surface-container-high":"#dce9ff","on-secondary":"#ffffff","inverse-surface":"#213145","outline":"#737686","surface-container-low":"#eff4ff","primary":"#004ac6","on-tertiary":"#ffffff","primary-fixed-dim":"#b4c5ff","surface-tint":"#0053db","surface-bright":"#f8f9ff","on-surface-variant":"#434655","primary-container":"#2563eb","on-secondary-container":"#5c647a","on-error-container":"#93000a","secondary-container":"#dae2fd","on-primary-fixed-variant":"#003ea8","background":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","on-tertiary-fixed-variant":"#005236","secondary":"#565e74","surface-dim":"#cbdbf5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.5rem","space-md":"1rem","gutter-mobile":"1rem","margin":"2rem","space-xl":"2rem","space-lg":"1.5rem"},fontFamily:{"label-md":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"]},fontSize:{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CampusFix Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgZCj5W0yAJOKRRBde2qlUzYX-dYpMk6m0gkV7QTTMFManQv7aJcgD1Yq-MVnvmaYg3up_MIJHgedGDCy7jvvSsk8-2HfIaZuAGLM5fo1MALx7ZmX4L7SYjS6NmwZdW0_I_bQLmpNsLcyEJOikF00xbV04y0tb9yrDVLXTDuc8KXt33JXVdnCSUosgEWmFWtoR-negYaDcliqIYp8mSYPwQp63TEcyGM1SJ4RHin8YwQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">CampusFix</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Facility Operations</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">Operations Menu</span></div><nav class="flex flex-col gap-space-xs px-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Student Dashboard</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface">Active</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="report-issue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Report Issue</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant">New</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="staff-operations" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">security</span><span>Staff Operations</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container">4 Urgent</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="issue-details" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span>Issue Details</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-and-assets" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Buildings & Assets</span></div></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)]"><div class="flex items-center gap-space-xs"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Campus Services</span></div><span class="font-label-sm text-label-sm text-tertiary font-semibold">Operational</span></div><button class="w-full flex items-center justify-center gap-space-xs py-1.5 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm transition-colors"><span class="material-symbols-outlined text-[16px]">sync_alt</span><span>Switch View Mode</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-1 hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">home</span><span>CampusFix</span></span><span>/</span><span class="text-on-surface font-medium">Operations Platform</span></div><div class="flex items-center bg-surface-container-low px-space-md py-1.5 rounded-lg w-96 max-w-md text-on-surface-variant focus-within:ring-2 focus-within:ring-primary-container focus-within:bg-surface-container-lowest transition-all"><span class="material-symbols-outlined text-[20px] mr-space-sm text-outline">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm w-full text-on-surface placeholder:text-outline" placeholder="Quick search tickets, buildings, personnel..." type="text"/><kbd class="font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded shadow-[0_1px_2px_rgba(0,0,0,0.05)] ml-space-sm whitespace-nowrap">⌘ K</kbd></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 bg-error-container text-on-error-container px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">phone_in_talk</span><span>SOS: (555) 0199</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ip5knEs3_zeH4G5VcXbv-FvwwLQBOcgLy2YPjbKXLGnx5wWTeFBpYKhWI5JBgiuSmYJZaRj4TH4JwB3gHV_8dN0pDHaWU2fQKzU46P540EJQeTSHfGobGLA3nx6AeLaIivNaTTVmbvjkJFH8D-D0x3Q1TCU-1-XeXmXzL8Kaoo7TfUVK3OclfHhy7OQ96HphJwcEpkp8qe-T0WlNX7a7uBe8LETRr9IhfqCeJs9q"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Alex Rivera</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Student Resident (Hall B)</span></div><span class="material-symbols-outlined text-[18px] text-outline">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Operational Top Command Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Facilities Operations & Dispatch Center</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
+</span>
+          Shift Active • 8 Technicians on Duty
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time facility ticket routing, technician assignment matrix, and SLA enforcement console.</p>
+</div>
+<!-- Quick Operations Action Bar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" onclick="handleExport()">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px] text-secondary">print</span>
+<span>Print Run Sheet</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-error text-on-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md font-semibold shadow-md hover:shadow-lg transition-all" onclick="openQuickDispatchModal()">
+<span class="material-symbols-outlined text-[18px]">emergency_home</span>
+<span>Dispatch Urgent Crew</span>
+</button>
+</div>
+</div>
+<!-- KPI Metrics Grid (Bento Grid Style) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Active Work Orders -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-20 h-20 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Total Active Work Orders</span>
+<span class="p-2 rounded-lg bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">24</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">warning</span> 8 Critical / High
+        </span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-1.5 mt-2">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 68%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline block mt-1.5">Across all campus departments</span>
+</div>
+<!-- Card 2: Unassigned / Triage -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-20 h-20 rounded-full bg-error-container/20 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Pending Triage</span>
+<span class="p-2 rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-xl text-headline-xl text-error font-bold">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg wait: 28 mins</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-1.5 mt-2">
+<div class="bg-error h-1.5 rounded-full" style="width: 35%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium block mt-1.5">Action required: 2 exceed SLA target</span>
+</div>
+<!-- Card 3: In Progress -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-20 h-20 rounded-full bg-secondary-fixed/30 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Work In Progress</span>
+<span class="p-2 rounded-lg bg-secondary-container text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">11</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">5 Campus Sectors</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-1.5 mt-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 52%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline block mt-1.5">7 field engineers on site</span>
+</div>
+<!-- Card 4: Resolved Today -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute -right-3 -top-3 w-20 h-20 rounded-full bg-tertiary-fixed/20 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Resolved Today</span>
+<span class="p-2 rounded-lg bg-tertiary-container text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold">14</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">98.4% SLA Pass</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-1.5 mt-2">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 98.4%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline block mt-1.5">+3 above daily operational quota</span>
+</div>
+</div>
+<!-- Operational Filter & Control Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm" id="queueSearch" onkeyup="filterQueue()" placeholder="Search ticket #, technician, building, or description..." type="text"/>
+</div>
+<!-- Quick Selector Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Category Filter -->
+<div class="relative">
+<select class="appearance-none bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none focus:bg-surface-container-lowest" id="categoryFilter" onchange="filterQueue()">
+<option value="all">All Categories</option>
+<option value="plumbing">Plumbing</option>
+<option value="electrical">Electrical</option>
+<option value="hvac">HVAC / Climate</option>
+<option value="structural">Structural</option>
+<option value="grounds">Grounds & Safety</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Campus Sector Filter -->
+<div class="relative">
+<select class="appearance-none bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none focus:bg-surface-container-lowest" id="sectorFilter" onchange="filterQueue()">
+<option value="all">All Campus Sectors</option>
+<option value="north">North Campus</option>
+<option value="south">South Quad</option>
+<option value="science">Central Science</option>
+<option value="housing">Student Housing</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Priority Filter Segment -->
+<div class="relative">
+<select class="appearance-none bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none focus:bg-surface-container-lowest" id="priorityFilter" onchange="filterQueue()">
+<option value="all">All Priorities</option>
+<option value="high">Urgent / High</option>
+<option value="medium">Medium Priority</option>
+<option value="low">Low / Routine</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">expand_more</span>
+</div>
+<button class="p-2 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="resetFilters()" title="Reset Filters">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- Status Tabs / Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pt-1 pb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-2">Status:</span>
+<button class="status-tab active-tab px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-medium transition-all shadow-sm" onclick="setStatusTab('all', this)">
+        All Tickets (24)
+      </button>
+<button class="status-tab px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" onclick="setStatusTab('triage', this)">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+        Pending Triage (6)
+      </button>
+<button class="status-tab px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" onclick="setStatusTab('progress', this)">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+        In Progress (11)
+      </button>
+<button class="status-tab px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" onclick="setStatusTab('parts', this)">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Waiting on Parts (3)
+      </button>
+<button class="status-tab px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" onclick="setStatusTab('resolved', this)">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+        Resolved (14)
+      </button>
+</div>
+</div>
+<!-- Main Split Layout: Work Orders Grid + Tech Dispatch Sidebar -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Work Orders Queue (Left & Center: 9 Cols) -->
+<div class="xl:col-span-9 flex flex-col gap-space-md">
+<!-- Active Queue Card Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Queue Header Metadata -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Priority Maintenance Feed</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-bold" id="itemCountBadge">5 Listed</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span> Auto-sync 30s
+            </span>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="refreshQueue()">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Issues Queue Table List -->
+<div class="flex flex-col" id="ticketList">
+<!-- TICKET 1: High Priority / In Progress (CF-8841) -->
+<div class="ticket-row relative p-space-md hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest" data-cat="plumbing" data-priority="high" data-sector="science" data-status="progress" data-ticket="CF-8841">
+<!-- Red Urgency Indicator Left Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-2">
+<!-- Left Ticket Summary -->
+<div class="flex items-start gap-space-md min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-error-container text-on-error-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">plumbing</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider font-bold">Plumb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">#CF-8841</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">High Priority</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Central Science • Fl 2, Rm 214
+                    </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mb-1">Main Water Riser Valve Leak</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Continuous cold water drip through dropped ceiling tiles. Shutoff key mobilized. Containment bucket in place.</p>
+</div>
+</div>
+<!-- Center/Right Details & In-Row Status Pill Controller -->
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-md shrink-0">
+<!-- SLA Indicator -->
+<div class="flex flex-col items-start lg:items-end min-w-[120px]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SLA Target</span>
+<span class="font-label-md text-label-md text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 1.5 hrs remaining
+                  </span>
+<div class="w-24 bg-surface-container rounded-full h-1 mt-1">
+<div class="bg-error h-1 rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Assigned Technician Tag -->
+<div class="flex items-center gap-2 bg-surface px-2.5 py-1.5 rounded-lg">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Close-up professional portrait photo of Dave M., an experienced facilities operations maintenance technician wearing a navy safety polo and lanyard inside an institutional college building." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccmWcKtE-xzYM7IfzP790ST-b0F1bGA3aKgcNauVe206fSLf7nedtIf_OgjpeQsWzxWVMzLizvruOFOgJ_stxcrPdykRBlNdcWAr59BRjqknAtGAZGXSBFySbgeov22r14GcjtcN81Rq9p18DMUNRE1mkgAJdJH48bvaUJD8zd1VbXwC7mh0ERkljVaX4ElL3CPBEPMlYiaLL74vGV8B3Yhr6e8siuHdracEaAErz"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Dave M.</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm ml-1" onclick="openReassignModal('CF-8841', 'Dave M.')">Reassign</button>
+</div>
+<!-- Interactive In-Row Status Pill Control -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8841', 'triage', this)">Triage</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-bold shadow-sm transition-colors" onclick="updateTicketStatus('CF-8841', 'progress', this)">In Progress</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8841', 'resolved', this)">Resolved</button>
+</div>
+<!-- Quick Note Trigger Button -->
+<button class="p-2 rounded-lg bg-surface text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openNoteModal('CF-8841', 'Main Water Riser Valve Leak')" title="Add Operational Note">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TICKET 2: High Priority / Pending Triage (CF-8840) -->
+<div class="ticket-row relative p-space-md hover:bg-surface-container-low/70 transition-colors bg-surface-container-low/30" data-cat="electrical" data-priority="high" data-sector="north" data-status="triage" data-ticket="CF-8840">
+<!-- Bold Red Urgency Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-2">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-error text-on-error shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[24px]">electric_bolt</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider font-bold">Power</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">#CF-8840</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error text-on-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">notification_important</span> Critical Dispatch
+                    </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      North Campus • Engineering Hall, Lab 102
+                    </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mb-1">Power Outage in Lab 102 Circuits</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Sub-panel B breaker tripped repeatedly under baseline load. Academic research freezers running on auxiliary UPS backup.</p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-md shrink-0">
+<!-- SLA Indicator -->
+<div class="flex flex-col items-start lg:items-end min-w-[120px]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Critical SLA</span>
+<span class="font-label-md text-label-md text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timer</span> 45 mins limit
+                  </span>
+<div class="w-24 bg-surface-container rounded-full h-1 mt-1">
+<div class="bg-error h-1 rounded-full animate-pulse" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Unassigned State with Quick Assign Button -->
+<div class="flex items-center gap-2 bg-error-container/50 px-2.5 py-1.5 rounded-lg">
+<span class="font-label-md text-label-md text-on-error-container font-semibold">Unassigned</span>
+<button class="px-2 py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold hover:bg-primary-container shadow-sm transition-colors" onclick="openReassignModal('CF-8840', 'Unassigned')">
+                    Assign Tech
+                  </button>
+</div>
+<!-- Interactive In-Row Status Pill Control -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-error text-on-error font-bold shadow-sm transition-colors" onclick="updateTicketStatus('CF-8840', 'triage', this)">Triage</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8840', 'progress', this)">In Progress</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8840', 'resolved', this)">Resolved</button>
+</div>
+<button class="p-2 rounded-lg bg-surface text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openNoteModal('CF-8840', 'Power Outage in Lab 102 Circuits')" title="Add Operational Note">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TICKET 3: High Priority / Waiting on Parts (CF-8835) -->
+<div class="ticket-row relative p-space-md hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest" data-cat="structural" data-priority="high" data-sector="science" data-status="parts" data-ticket="CF-8835">
+<!-- Bold Amber/Red Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-2">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[24px]">elevator</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider font-bold">Elev</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">#CF-8835</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">High Priority</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-semibold">Parts Ordered</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Central Science • Science Tower, Car B
+                    </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mb-1">Elevator B Button Panel Malfunction</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Floor 4 call button unresponsive; relay assembly circuit board replacement ordered via vendor PO #9921.</p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-md shrink-0">
+<!-- SLA Indicator -->
+<div class="flex flex-col items-start lg:items-end min-w-[120px]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Vendor SLA</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span> Delivery: Tomorrow
+                  </span>
+<div class="w-24 bg-surface-container rounded-full h-1 mt-1">
+<div class="bg-secondary h-1 rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+<!-- Assigned Technician Tag -->
+<div class="flex items-center gap-2 bg-surface px-2.5 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-primary">domain</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Otis Contract Crew</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm ml-1" onclick="openReassignModal('CF-8835', 'Otis Contract Crew')">Manage</button>
+</div>
+<!-- Interactive In-Row Status Pill Control -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8835', 'triage', this)">Triage</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-secondary text-on-secondary font-bold shadow-sm transition-colors" onclick="updateTicketStatus('CF-8835', 'parts', this)">On Parts</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8835', 'resolved', this)">Resolved</button>
+</div>
+<button class="p-2 rounded-lg bg-surface text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openNoteModal('CF-8835', 'Elevator B Button Panel Malfunction')" title="Add Operational Note">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TICKET 4: Medium Priority / In Progress (CF-8829) -->
+<div class="ticket-row relative p-space-md hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest" data-cat="electrical" data-priority="medium" data-sector="housing" data-status="progress" data-ticket="CF-8829">
+<!-- Amber Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-outline-variant"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-2">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-surface-container text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider font-bold">Light</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">#CF-8829</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed-variant font-semibold">Medium Priority</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Student Housing • Resident Hall C, North Stairwell
+                    </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mb-1">Stairwell Emergency Exit Light Defect</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Battery backup unit flashing amber fail code on level 3 egress door. LED ballast inspection underway.</p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-md shrink-0">
+<!-- SLA Indicator -->
+<div class="flex flex-col items-start lg:items-end min-w-[120px]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SLA Target</span>
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 3.5 hrs remaining
+                  </span>
+<div class="w-24 bg-surface-container rounded-full h-1 mt-1">
+<div class="bg-primary h-1 rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+<!-- Assigned Technician Tag -->
+<div class="flex items-center gap-2 bg-surface px-2.5 py-1.5 rounded-lg">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Professional headshot of Sarah K., a facilities operations technician wearing protective safety glasses, reflective operations vest in a campus workshop setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDot8r-xXdspGrhLAPDvTe6_tvWU6XLSjXR2Csvav2VWM5XSt4a3hSZgSC5sQ_NIGhpfQJxXJboxVIDM3KOV8cmzsaRl49EadxLmn_SRHlgTddvXV_DQJczC37SyrzjvbvZIJDN1V_Hk7NS6WVp9YnBpKV6nIuMcsD9wK9279Fg5jdB6Z5a1Rn9FHoIgwosiGriCEHulO9jChjb6K6hR6JlXopoDb1072BmEQEuhsRW"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Sarah K.</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm ml-1" onclick="openReassignModal('CF-8829', 'Sarah K.')">Reassign</button>
+</div>
+<!-- Interactive In-Row Status Pill Control -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8829', 'triage', this)">Triage</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-bold shadow-sm transition-colors" onclick="updateTicketStatus('CF-8829', 'progress', this)">In Progress</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8829', 'resolved', this)">Resolved</button>
+</div>
+<button class="p-2 rounded-lg bg-surface text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openNoteModal('CF-8829', 'Stairwell Emergency Exit Light Defect')" title="Add Operational Note">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TICKET 5: Low Priority / Resolved (CF-8812) -->
+<div class="ticket-row relative p-space-md hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest opacity-90" data-cat="structural" data-priority="low" data-sector="south" data-status="resolved" data-ticket="CF-8812">
+<!-- Green Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-2">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider font-bold">Done</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">#CF-8812</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container font-semibold">Resolved</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      South Quad • Art Building, Studio 3A
+                    </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mb-1 line-through opacity-75">Replaced Broken Window Latch</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Hardware swapped for heavy-duty casement latch assembly. Weather seal tested and verified by studio manager.</p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-md shrink-0">
+<!-- SLA Indicator -->
+<div class="flex flex-col items-start lg:items-end min-w-[120px]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Completed</span>
+<span class="font-label-md text-label-md text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Met SLA (-42m)
+                  </span>
+<div class="w-24 bg-surface-container rounded-full h-1 mt-1">
+<div class="bg-tertiary h-1 rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Assigned Technician Tag -->
+<div class="flex items-center gap-2 bg-surface px-2.5 py-1.5 rounded-lg">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photography of Tom H., an institutional campus carpenter and maintenance technician, smiling in front of a campus building facade with toolbox." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB52qAp-BMU_FDv3ujXtGtxpUDJ-6fZYcn5h-Br5VHL7KHsG_1qeLUObosCdtBfTTsQlaXUQqsJ9KfAyQ8I8RngRURxNNYb8kcbi1cCbNrkrdxLuZYkLF-Sbvkf5tmd_9ctIhMn0Xo3UKQJIyyxFC8vMMkWOFbaSwo3qknwx6AMKxcD_8KFQIy0y9i9eAMVZwrgVtJaYIR6LuXc_m58ElBYm2JSolNgzoEylLZKVAI0"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Tom H.</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Closed</span>
+</div>
+<!-- Interactive In-Row Status Pill Control -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8812', 'triage', this)">Triage</button>
+<button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors" onclick="updateTicketStatus('CF-8812', 'progress', this)">In Progress</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-tertiary text-on-tertiary font-bold shadow-sm transition-colors" onclick="updateTicketStatus('CF-8812', 'resolved', this)">Resolved</button>
+</div>
+<button class="p-2 rounded-lg bg-surface text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openNoteModal('CF-8812', 'Replaced Broken Window Latch')" title="Add Operational Note">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Queue Pagination / Table Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <span class="font-semibold text-on-surface">5</span> of <span class="font-semibold text-on-surface">24</span> active facility incidents
+          </div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm transition-colors disabled:opacity-50" disabled="">
+              Previous
+            </button>
+<span class="px-2 font-label-sm text-label-sm text-on-surface font-semibold">1 of 5</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm transition-colors">
+              Next
+            </button>
+</div>
+</div>
+</div>
+<!-- Live Incident Activity Banner (Asymmetric Accent Module) -->
+<div class="bg-gradient-to-r from-primary/10 via-surface-container to-surface-container-low rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">campaign</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Campus Alert: Scheduled Boiler Inspection at 14:00</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central Heating Plant Unit 2 temporarily offline for compliance testing. Expect mild hot water pressure fluctuations in Sector 3.</p>
+</div>
+</div>
+<button class="hidden md:inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold hover:underline shrink-0">
+          View Protocol <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Technician Dispatch & Real-Time Roster Sidebar (Right: 3 Cols) -->
+<div class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- Crew Availability Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b-0 mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Duty Roster</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">8 Total</span>
+</div>
+<!-- Shift Breakdown Badges -->
+<div class="grid grid-cols-3 gap-2 mb-space-md text-center">
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-[10px] text-outline uppercase block">Active</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">4</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-[10px] text-outline uppercase block">Dispatched</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">2</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-[10px] text-outline uppercase block">On Break</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">2</span>
+</div>
+</div>
+<!-- Technicians Scrollable List -->
+<div class="flex flex-col gap-2.5 max-h-[460px] overflow-y-auto pr-1">
+<!-- Tech 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Close-up headshot photo of Dave M., senior facilities operations technician, smiling in uniform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoNbo4tCEdHASJOjj9Gvqhde3Y7cZlGJBTBusPv2RxFPQwLSUFBfs6Vcl8k9zQKg_D4e3QATPZQqj_QXiriWpbl84hwlVoA2IJZ76DQkj5RM3KNHiEpPS_JjkFGEXsL53FYDmZJv96esVNz1Z42zrSebTkT5ut4VSc2i1fpuYPY5Y6fTvpGMwXbNqU01Q0NgRHPwyH-lHG2utUM70DKCNLpKUz762GcBxOh3sYTZuf"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dave Miller</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Plumbing • On #CF-8841</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="quickRadioCall('Dave Miller')" title="Radio Call">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+</button>
+</div>
+<!-- Tech 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photography of Sarah K., mechanical and electrical campus maintenance technician in navy workwear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuB3PAQ0N21oQIRnvy5gJ7YWEu4xiiVGY96Gx0zRwbd1nKu7Bnuq3crVPFvgmQ6EDlGSRmQYFPcXD9LWsVxnNFfhL1DrDX26HjUb7b9cvmHLG5-tOWDwJyuXpCKyR_dOFIVgqnB_XG6RtvP1zu4vVij3UczDS8ft2jawVNSNMH5WzyfyuHJeUiLjoCOt2LFPgrMbszNQ_Ub2lTqyd1PxzVnsBTX5_6o_60kgULGAwO"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah Klein</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Electrical • On #CF-8829</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="quickRadioCall('Sarah Klein')" title="Radio Call">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+</button>
+</div>
+<!-- Tech 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Profile headshot portrait of Carlos R., campus structural maintenance technician in protective gear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgQEf2LLW6jqLpETquyufgiokV8pyLugd6K0GAX_ApX7RXf5QjFvige80l-6E9lBXzaiujDqNOghp8kRR_VvQ_F_m-Sv9G7j1si-SCaPU9sNbpXvhB9h_jVxY4FjDUAOuf-k8AH19idUPRLwKqrvkeRWdW3aODChSKhn592R78-hPSKFsEiwPCIZ9Od8j-rIcMM7SFpeSNmVHwIk7cCNnypPVlhIy76sUn0y60NTuV"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Carlos Ruiz</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium truncate">HVAC • Available (Ready)</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="assignDirectTech('Carlos Ruiz')">
+              Dispatch
+            </button>
+</div>
+<!-- Tech 4 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Headshot of Elena V., grounds and campus infrastructure technician wearing safety helmet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_OdKFgE6rfI5J1AqopqK5zf_aevBMGDx9KU3M_IqgxJnWbtopW5yFRL5_gheNt7r7s-6QumI2WzYN_FrDgvb2R00wd8LvkNR_sPh23mswB-U-239akD1PYe5Kz0PmJ1d2IzZ5rTpgksTIl1FW3LQGExuondejX49lTEM0waI4aw1uIH1dijGRygSxLL9H1JQoCE_vymaOesYnSd8Id-9Af8eI8sZVxXnzDjUWte0l"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium truncate">Grounds • Available (Ready)</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="assignDirectTech('Elena Vance')">
+              Dispatch
+            </button>
+</div>
+<!-- Tech 5 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photo of Marcus Chen, master plumber for collegiate facility operations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyFx5Ih5Igm1A2XDecqMFSGZljPuSVBCrtamWCoIHqeoN5SfwaiBd0ySTcVTqrDhFd0xIeoy12COKFrrfOvILhGDSh07KKGGFMSqP_jgQIeaIsw4B-z0uaZS3439NRxPzbN9--ObpcZ1qF6tMTtoCSDH76mBmBzZ9ZMGRwB1FVEot1h21gi2M2NNR6Jsxg0OUgHB__InbtBW1LFxBukrqrudY-WlO9ty52lAAmb-l"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Marcus Chen</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium truncate">Plumbing • Available (Ready)</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="assignDirectTech('Marcus Chen')">
+              Dispatch
+            </button>
+</div>
+<!-- Tech 6 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover opacity-75" data-alt="Headshot photo of Tom H., general maintenance specialist holding tablet in engineering room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD61j90U_YkblfmBdoSQ0kWqyg56Czk7kRT5qD_2x7Ru6tNA5S8Ksgf8UC03GHdiStiKfEzdqdCBiqv4AYEb2wvKGQA6BNLUU0c5AfMzPkQidH1-nZzxmGP8n-IfzpXWHYez2qOmM5D_DDmrI0kSR_5KYraqA7KiQUgaeqetKi23wukwri79LjHH5fBVOf_JkPaEe1LGBvdYtYmWa3HTGLzZVnOUDWn7XxmNf4q7tcK"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tom Hayes</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Carpentry • On Break (15m)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline px-1.5 py-0.5 rounded bg-surface">Break</span>
+</div>
+<!-- Tech 7 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover opacity-75" data-alt="Portrait photo of Jordan T., HVAC technician in reflective gear near college campus HVAC cooling tower." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDabmb1KaB1WKZBYLaqKKbPO7HcZSHp1V1-sVEBVRpxaOj6RwOhtzxyN-3hcJSunwevumoKyp3sKwXogNjNa5l1oq5mM1AgNzO4lItISXq2f_zdvUXXmgwSo4j35fjSAoKa-2Z_vHCLfm_Vskls7gfvhdmI_8oIZlr_c6J3MU-2iG9rzSyZH9piY1ClsxgIKmsnCXRFxlVeng497c-f716STslhCMF1jJRL3reAhu_"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Jordan Taylor</span>
+<span class="font-label-sm text-label-sm text-outline truncate">HVAC • Rest Break</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline px-1.5 py-0.5 rounded bg-surface">Break</span>
+</div>
+<!-- Tech 8 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative shrink-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center font-bold text-xs">
+                  OC
+                </div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Otis Contract Crew</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Elevators • External Contractor</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium px-1.5 py-0.5 rounded bg-surface">Field</span>
+</div>
+</div>
+</div>
+<!-- Campus Sector Real-Time Load Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sector Load</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Active WOs</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Central Science & Labs</span>
+<span class="text-error font-bold">9 Tickets (High)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-error h-1.5 rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">North Campus Engineering</span>
+<span class="text-primary font-bold">6 Tickets</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-primary h-1.5 rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Student Housing Quads</span>
+<span class="text-secondary font-bold">5 Tickets</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">South Quad & Fine Arts</span>
+<span class="text-tertiary font-bold">4 Tickets</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 32%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal 1: Quick Resolution & Operational Note Modal -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="quickNoteModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="modalTicketTitle">Append Operational Note</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded-lg" onclick="closeNoteModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Ticket Reference</span>
+<div class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2" id="modalTicketRef">
+            #CF-8841: Main Water Riser Valve Leak
+          </div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium block mb-1.5" for="technicianNoteArea">Action Taken / Resolution Summary</label>
+<textarea class="w-full p-3 bg-surface rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary" id="technicianNoteArea" placeholder="Detail parts replaced, safety lockout procedures applied, or follow-up contractor notes..." rows="4"></textarea>
+</div>
+<div class="flex items-center gap-space-sm">
+<label class="flex items-center gap-2 cursor-pointer font-label-md text-label-md text-on-surface-variant">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" id="markResolvedCheckbox" type="checkbox"/>
+<span>Mark ticket as Fully Resolved after saving</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="closeNoteModal()">
+            Cancel
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-sm transition-colors" onclick="saveNoteAndSubmit()">
+            Commit Note & Log
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal 2: Reassign Technician Modal -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="reassignModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-md shadow-xl overflow-hidden">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_add</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Assign Technician</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded-lg" onclick="closeReassignModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select an available crew member for work order <strong class="text-on-surface" id="reassignTicketId">CF-8840</strong>.</p>
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<input checked="" class="text-primary focus:ring-primary" name="techPick" type="radio" value="Carlos Ruiz"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Carlos Ruiz</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">HVAC • Ready</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<input class="text-primary focus:ring-primary" name="techPick" type="radio" value="Elena Vance"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Elena Vance</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Grounds • Ready</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<input class="text-primary focus:ring-primary" name="techPick" type="radio" value="Marcus Chen"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Marcus Chen</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Plumbing • Ready</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<input class="text-primary focus:ring-primary" name="techPick" type="radio" value="Sarah Klein"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sarah Klein</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Electrical (1 Active)</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="closeReassignModal()">
+            Cancel
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-sm transition-colors" onclick="commitTechReassignment()">
+            Confirm Dispatch
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal 3: Emergency Dispatch Quick Confirmation -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="urgentDispatchModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden border-2 border-error">
+<div class="px-space-lg py-space-md bg-error text-on-error flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+<h3 class="font-headline-sm text-headline-sm font-bold">Broadcast Urgent Campus Dispatch</h3>
+</div>
+<button class="text-on-error hover:bg-error-container hover:text-on-error-container p-1 rounded-lg" onclick="closeQuickDispatchModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface">Instantly send an audible radio dispatch and high-priority push notification to all on-duty technicians and facility supervisors.</p>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium block mb-1">Emergency Nature</label>
+<select class="w-full p-2.5 bg-surface rounded-xl font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-error" id="urgentType">
+<option>Power Outage / Transformer Malfunction</option>
+<option>Major Water Pipe Burst / Structural Flooding</option>
+<option>Elevator Passenger Entrapment</option>
+<option>Hazardous Gas or Chemical Odor Report</option>
+<option>Severe Weather Campus Egress Hazard</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium block mb-1">Target Sector</label>
+<select class="w-full p-2.5 bg-surface rounded-xl font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-error" id="urgentLocation">
+<option>Central Science Tower & Laboratories</option>
+<option>Engineering Hall & North Quad</option>
+<option>Undergraduate Resident Halls (All)</option>
+<option>Main Campus Student Dining Center</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="closeQuickDispatchModal()">
+            Cancel
+          </button>
+<button class="px-5 py-2.5 rounded-lg bg-error text-on-error font-label-md text-label-md font-bold hover:bg-error-container hover:text-on-error-container shadow-md transition-all flex items-center gap-1.5" onclick="executeUrgentBroadcast()">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+<span>Broadcast Alarm & Mobilize</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback Area -->
+<div class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-2xl animate-in slide-in-from-bottom duration-200" id="dispatchToast">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px]" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Operation updated successfully.</span>
+</div>
+</div>
+<script>
+  let activeStatusFilter = 'all';
+  let activeSelectedTicket = null;
+
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('dispatchToast');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+
+    toastMsg.textContent = message;
+    if (isError) {
+      toastIcon.textContent = 'warning';
+      toastIcon.className = 'material-symbols-outlined text-error-container text-[22px]';
+    } else {
+      toastIcon.textContent = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-tertiary-fixed text-[22px]';
+    }
+
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 3500);
+  }
+
+  function setStatusTab(status, el) {
+    activeStatusFilter = status;
+    document.querySelectorAll('.status-tab').forEach(tab => {
+      tab.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm', 'font-medium');
+      tab.classList.add('bg-surface', 'text-on-surface-variant');
+    });
+
+    if (el) {
+      el.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm', 'font-medium');
+      el.classList.remove('bg-surface', 'text-on-surface-variant');
+    }
+    filterQueue();
+  }
+
+  function filterQueue() {
+    const searchVal = (document.getElementById('queueSearch')?.value || '').toLowerCase().trim();
+    const categoryVal = document.getElementById('categoryFilter')?.value || 'all';
+    const sectorVal = document.getElementById('sectorFilter')?.value || 'all';
+    const priorityVal = document.getElementById('priorityFilter')?.value || 'all';
+    
+    const rows = document.querySelectorAll('.ticket-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const ticketId = row.getAttribute('data-ticket') || '';
+      const rowStatus = row.getAttribute('data-status') || '';
+      const rowPriority = row.getAttribute('data-priority') || '';
+      const rowSector = row.getAttribute('data-sector') || '';
+      const rowCat = row.getAttribute('data-cat') || '';
+      const textContent = row.textContent.toLowerCase();
+
+      const matchesSearch = !searchVal || textContent.includes(searchVal) || ticketId.toLowerCase().includes(searchVal);
+      const matchesStatus = (activeStatusFilter === 'all') || (rowStatus === activeStatusFilter);
+      const matchesCategory = (categoryVal === 'all') || (rowCat === categoryVal);
+      const matchesSector = (sectorVal === 'all') || (rowSector === sectorVal);
+      const matchesPriority = (priorityVal === 'all') || (rowPriority === priorityVal);
+
+      if (matchesSearch && matchesStatus && matchesCategory && matchesSector && matchesPriority) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    const badge = document.getElementById('itemCountBadge');
+    if (badge) {
+      badge.textContent = visibleCount + ' Listed';
+    }
+  }
+
+  function resetFilters() {
+    const searchInput = document.getElementById('queueSearch');
+    if (searchInput) searchInput.value = '';
+    
+    const cat = document.getElementById('categoryFilter');
+    if (cat) cat.value = 'all';
+
+    const sec = document.getElementById('sectorFilter');
+    if (sec) sec.value = 'all';
+
+    const prio = document.getElementById('priorityFilter');
+    if (prio) prio.value = 'all';
+
+    const firstTab = document.querySelector('.status-tab');
+    if (firstTab) setStatusTab('all', firstTab);
+
+    filterQueue();
+    showToast('Filters cleared.');
+  }
+
+  function updateTicketStatus(ticketId, newStatus, btn) {
+    const row = document.querySelector(`[data-ticket="${ticketId}"]`);
+    if (!row) return;
+
+    row.setAttribute('data-status', newStatus);
+    
+    // Style the in-row button group
+    const parentContainer = btn.parentElement;
+    parentContainer.querySelectorAll('button').forEach(b => {
+      b.className = 'px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors';
+    });
+
+    if (newStatus === 'resolved') {
+      btn.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-tertiary text-on-tertiary font-bold shadow-sm transition-colors';
+      showToast(`Work Order #${ticketId} marked as Resolved.`);
+    } else if (newStatus === 'progress') {
+      btn.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-bold shadow-sm transition-colors';
+      showToast(`Work Order #${ticketId} updated to In Progress.`);
+    } else if (newStatus === 'parts') {
+      btn.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-secondary text-on-secondary font-bold shadow-sm transition-colors';
+      showToast(`Work Order #${ticketId} status set to Waiting on Parts.`);
+    } else {
+      btn.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-error text-on-error font-bold shadow-sm transition-colors';
+      showToast(`Work Order #${ticketId} returned to Triage.`);
+    }
+
+    filterQueue();
+  }
+
+  function openNoteModal(ticketId, title) {
+    activeSelectedTicket = ticketId;
+    document.getElementById('modalTicketTitle').textContent = `Log Operational Note: ${ticketId}`;
+    document.getElementById('modalTicketRef').textContent = `${ticketId} • ${title}`;
+    document.getElementById('technicianNoteArea').value = '';
+    document.getElementById('markResolvedCheckbox').checked = false;
+    document.getElementById('quickNoteModal').classList.remove('hidden');
+  }
+
+  function closeNoteModal() {
+    document.getElementById('quickNoteModal').classList.add('hidden');
+    activeSelectedTicket = null;
+  }
+
+  function saveNoteAndSubmit() {
+    const text = document.getElementById('technicianNoteArea').value;
+    const shouldResolve = document.getElementById('markResolvedCheckbox').checked;
+
+    if (!text.trim()) {
+      showToast('Please type a short resolution note or status update.', true);
+      return;
+    }
+
+    if (shouldResolve && activeSelectedTicket) {
+      const row = document.querySelector(`[data-ticket="${activeSelectedTicket}"]`);
+      if (row) row.setAttribute('data-status', 'resolved');
+    }
+
+    closeNoteModal();
+    showToast(`Note logged for #${activeSelectedTicket || 'order'}.`);
+    filterQueue();
+  }
+
+  function openReassignModal(ticketId, currentAssignee) {
+    activeSelectedTicket = ticketId;
+    document.getElementById('reassignTicketId').textContent = ticketId;
+    document.getElementById('reassignModal').classList.remove('hidden');
+  }
+
+  function closeReassignModal() {
+    document.getElementById('reassignModal').classList.add('hidden');
+    activeSelectedTicket = null;
+  }
+
+  function commitTechReassignment() {
+    const radios = document.getElementsByName('techPick');
+    let chosen = 'Carlos Ruiz';
+    for (const r of radios) {
+      if (r.checked) chosen = r.value;
+    }
+
+    showToast(`Assigned ${chosen} to #${activeSelectedTicket}.`);
+    closeReassignModal();
+  }
+
+  function openQuickDispatchModal() {
+    document.getElementById('urgentDispatchModal').classList.remove('hidden');
+  }
+
+  function closeQuickDispatchModal() {
+    document.getElementById('urgentDispatchModal').classList.add('hidden');
+  }
+
+  function executeUrgentBroadcast() {
+    const nature = document.getElementById('urgentType').value;
+    const loc = document.getElementById('urgentLocation').value;
+    closeQuickDispatchModal();
+    showToast(`🚨 Priority Crew Mobilized for ${nature} at ${loc}!`);
+  }
+
+  function quickRadioCall(techName) {
+    showToast(`Connecting direct operational push-to-talk channel: ${techName}...`);
+  }
+
+  function assignDirectTech(techName) {
+    showToast(`Dispatch request queued for ${techName}.`);
+  }
+
+  function handleExport() {
+    showToast('Exporting 24 maintenance work orders to CSV format...');
+  }
+
+  function refreshQueue() {
+    showToast('Synchronized with Central Facility Dispatch server.');
+  }
+</script></main></div></body></html>
